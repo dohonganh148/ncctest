@@ -1,0 +1,53 @@
+.home {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  .wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .content {
+    width: 85%;
+    margin: 20px auto 0px;
+    .desc {
+      text-align: center;
+      margin-bottom: 100px;
+      .logo {
+        width: 310px;
+        height: 122px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 576px) {
+            width: 165px;
+            height: 61px;
+        }
+      }
+      .detail {
+        background-color: #efefef;
+        margin: auto;
+        padding: 38px;
+        p {
+          max-width: 972px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        h6 {
+          padding-bottom: 18px;
+          font-size: 18px;
+          line-height: 21.09px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .cardList {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      margin-top: 40px;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+  }
+}
